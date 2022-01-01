@@ -1,0 +1,21 @@
+<div id="post-thumbnail-component">
+
+  <div id="post-thumbnail-date" class="margin-top-10">
+    {{post.created_at | date}}
+  </div>
+
+  <div id="post-thumbnail-title" >
+    {{(post.title.length>30)? (post.title | slice:0:30)+'..':(post.title)}}
+  </div>
+
+  <div class="content-divider full-width margin-top-10"></div>
+
+  <div id="post-thumbnail-description" class="margin-top-10">
+    {{(post.body.length>30)? (post.body | slice:0:100)+'..':(post.body)}}
+  </div>
+
+
+  <button class="action-button full-width margin-top-10">Discover</button>
+
+
+</div>

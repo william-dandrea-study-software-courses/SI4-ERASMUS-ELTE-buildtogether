@@ -1,0 +1,8 @@
+<div *ngIf="allProjects === null" class="full-width full-height">
+  <mat-spinner></mat-spinner>
+</div>
+
+
+<div *ngIf="allProjects != null" class="full-width full-height" id="project-thumbnail-dashboard">
+  <app-project-thumbnail *ngFor="let project of allProjects" [project]="project" id="project-thumbnail"></app-project-thumbnail>
+</div>

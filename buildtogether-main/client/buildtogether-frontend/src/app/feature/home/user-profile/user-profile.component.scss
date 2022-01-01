@@ -1,0 +1,56 @@
+
+mat-card {
+    width: 90%;
+    height: 80%;
+    background: #F8FAFB;
+    .edit {
+      position: absolute;
+      top: 0%;
+      right: 0%;
+      font-size: 130%;
+    }
+    img {
+      border-radius: 12%;
+      width: 66%;
+      margin-top: -2.5%;
+      margin-left: 15%;
+    }
+    .line {
+      display: inline-flex;
+      padding: 2%;
+    }
+}
+
+.rounded-box {
+    width: 85%;
+    height: 90%;
+    padding: 5%;
+    border-radius: 10%;
+    background: white;
+    .header {
+      padding: 3%;
+      font-size: 170%;
+    }
+    .chip-list {
+      display: block;
+      padding: 5%;
+      .mat-chip {
+        color: white;
+        background: #334C70;
+      }      
+    }
+    mat-card {
+      width: 80%;
+      height: 63%;
+      display: block;
+      margin: auto;
+    }
+}
+
+.example-container .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
+
+.example-full-width {
+  width: 60%;
+}

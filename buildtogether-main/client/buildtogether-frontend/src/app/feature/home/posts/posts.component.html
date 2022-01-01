@@ -1,0 +1,11 @@
+<div *ngIf="allPosts === null" class="full-width full-height">
+  <mat-spinner></mat-spinner>
+</div>
+
+
+<div *ngIf="allPosts != null" class="full-width full-height" id="post-thumbnail-dashboard">
+
+  <app-post-thumbnail *ngFor="let post of allPosts" [post]="post" id="post-thumbnail"></app-post-thumbnail>
+</div>
+
+
